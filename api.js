@@ -82,3 +82,20 @@ document.querySelectorAll(".puzzle-piece").forEach(piece => {
     }
   });
 });
+// --- Extra: always return piece to original starting pile on click ---
+window.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".puzzle-piece").forEach(piece => {
+    // Save the original starting position (from CSS) only once
+    if (!piece.dataset.originalLeft || !piece.dataset.originalTop) {
+      const cs = window.getComputedStyle(piece);
+      piece.dataset.originalLeft = cs.left;
+      piece.dataset.originalTop = cs.top;
+    }
+
+    piece.addEventListener("click", function () {
+      this.style.position = "absolute";
+      this.style.left = this.dataset.originalLeft;
+      this.style.top = this.dataset.originalTop;
+    });
+  });
+});
