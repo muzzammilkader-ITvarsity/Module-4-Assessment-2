@@ -1,0 +1,54 @@
+/* basic page */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: deepskyblue;
+  position: relative; /* allows absolute positioning inside */
+  overflow: hidden;
+}
+
+/* size for grid squares and pieces */
+.puzzle-grid-drop,
+.puzzle-piece {
+  width: 200px;
+  height: 200px;
+  user-select: none;
+}
+
+/* make pieces draggable with cursor */
+.puzzle-piece {
+  cursor: grab;
+}
+
+/* --- grid positions --- */
+
+/* Row 1 */
+#grid1-1 { position: absolute; left: 0px;   top: 0px; }
+#grid1-2 { position: absolute; left: 200px; top: 0px; }
+#grid1-3 { position: absolute; left: 400px; top: 0px; }
+
+/* Row 2 */
+#grid2-1 { position: absolute; left: 0px;   top: 200px; }
+#grid2-2 { position: absolute; left: 200px; top: 200px; }
+#grid2-3 { position: absolute; left: 400px; top: 200px; }
+
+/* Row 3 */
+#grid3-1 { position: absolute; left: 0px;   top: 400px; }
+#grid3-2 { position: absolute; left: 200px; top: 400px; }
+#grid3-3 { position: absolute; left: 400px; top: 400px; }
+
+/* --- starting positions for puzzle pieces --- */
+/* you can move these anywhere you want on the page */
+#img1-1-draggable { position: absolute; left: 650px; top: 0px; }
+#img1-2-draggable { position: absolute; left: 650px; top: 210px; }
+#img1-3-draggable { position: absolute; left: 650px; top: 420px; }
+
+#img2-1-draggable { position: absolute; left: 860px; top: 0px; }
+#img2-2-draggable { position: absolute; left: 860px; top: 210px; }
+#img2-3-draggable { position: absolute; left: 860px; top: 420px; }
+
+#img3-1-draggable { position: absolute; left: 1070px; top: 0px; }
+#img3-2-draggable { position: absolute; left: 1070px; top: 210px; }
+#img3-3-draggable { position: absolute; left: 1070px; top: 420px; }
