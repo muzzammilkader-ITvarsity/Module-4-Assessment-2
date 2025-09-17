@@ -71,3 +71,14 @@
     init();
   }
 })();
+// --- Extra: return piece to original place on click ---
+document.querySelectorAll(".puzzle-piece").forEach(piece => {
+  piece.addEventListener("click", function () {
+    // if original position was stored, move back
+    if (this.dataset.startLeft && this.dataset.startTop) {
+      this.style.position = "absolute";
+      this.style.left = this.dataset.startLeft;
+      this.style.top = this.dataset.startTop;
+    }
+  });
+});
