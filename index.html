@@ -5,24 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>3x3 Jigsaw Puzzle</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="javascript/api.js"></script>
+  <script defer src="api.js"></script>
 </head>
 <body>
 
-  <!-- Puzzle grid (3x3) -->
-  <img src="puzzle-grid.png" class="puzzle-grid-drop" id="grid1-1" />
-  <img src="puzzle-grid.png" class="puzzle-grid-drop" id="grid1-2" />
-  <img src="puzzle-grid.png" class="puzzle-grid-drop" id="grid1-3" />
+  <!-- row 1 -->
+  <div class="puzzle-grid-drop" id="grid1-1"><img src="puzzle-grid.png" /></div>
+  <div class="puzzle-grid-drop" id="grid1-2"><img src="puzzle-grid.png" /></div>
+  <div class="puzzle-grid-drop" id="grid1-3"><img src="puzzle-grid.png" /></div>
 
-  <img src="puzzle-grid.png" class="puzzle-grid-drop" id="grid2-1" />
-  <img src="puzzle-grid.png" class="puzzle-grid-drop" id="grid2-2" />
-  <img src="puzzle-grid.png" class="puzzle-grid-drop" id="grid2-3" />
+  <!-- row 2 -->
+  <div class="puzzle-grid-drop" id="grid2-1"><img src="puzzle-grid.png" /></div>
+  <div class="puzzle-grid-drop" id="grid2-2"><img src="puzzle-grid.png" /></div>
+  <div class="puzzle-grid-drop" id="grid2-3"><img src="puzzle-grid.png" /></div>
 
-  <img src="puzzle-grid.png" class="puzzle-grid-drop" id="grid3-1" />
-  <img src="puzzle-grid.png" class="puzzle-grid-drop" id="grid3-2" />
-  <img src="puzzle-grid.png" class="puzzle-grid-drop" id="grid3-3" />
+  <!-- row 3 -->
+  <div class="puzzle-grid-drop" id="grid3-1"><img src="puzzle-grid.png" /></div>
+  <div class="puzzle-grid-drop" id="grid3-2"><img src="puzzle-grid.png" /></div>
+  <div class="puzzle-grid-drop" id="grid3-3"><img src="puzzle-grid.png" /></div>
 
-  <!-- Puzzle pieces -->
+  <!-- puzzle pieces -->
   <img src="img1-1.png" id="img1-1-draggable" class="puzzle-piece" draggable="true" />
   <img src="img1-2.png" id="img1-2-draggable" class="puzzle-piece" draggable="true" />
   <img src="img1-3.png" id="img1-3-draggable" class="puzzle-piece" draggable="true" />
